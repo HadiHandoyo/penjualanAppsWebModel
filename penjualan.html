@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Penjualan</title>
+    <link rel="stylesheet" href="./style/penjualan.css">
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="logo-header">
+                <img src="./assets/logo-SIS-PNG.png" alt="">
+            </div>
+            <div class="header-title">
+                Sekolah Sistem Informasi
+            </div>
+        </div>
+    
+        <div class="mid-content">
+            <div class="left-nav">
+                <div class="home">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="pembelian">
+                    <a href="penjualan.html">Penjualan</a>
+                </div>
+                <div class="history">
+                    <a href="riwayat.html">Riwayat Penjualan</a>
+                </div>
+                </div>
+                <div class="isi-konten">
+                    <div class="left-content">
+                    <h3>cari data penjualan </h3>
+                    <div class="d-flex">
+                        <input type="text" name="search" id="search" class="form-control" placeholder="type in a search term here"/>
+                      </div>                      
+
+    <table id="table-penjualan">
+        <thead>
+            <tr>
+                <th>Nomor Urut</th>
+                <th>Nama Barang</th>
+                <th>Quantity</th>
+                <th>Dibuat Oleh</th>
+                <th>Tanggal Dibuat</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                    <td>01</td>
+                    <td>Gentle Gen Deterjen Cair</td>
+                    <td>01</td>
+                    <td>Hadi Handoyo</td>
+                    <td>2022-07-08</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>02</td>
+                    <td>Pepsodent</td>
+                    <td>04</td>
+                    <td>David</td>
+                    <td>2022-07-01</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>03</td>
+                    <td>Head and shoulders</td>
+                    <td>08</td>
+                    <td>Valentino</td>
+                    <td>2022-07-07</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>04</td>
+                    <td>Murray stick billiard</td>
+                    <td>10</td>
+                    <td>Kennedy</td>
+                    <td>2022-07-10</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>05</td>
+                    <td>Asus ROG laptop</td>
+                    <td>05</td>
+                    <td>Joko</td>
+                    <td>2022-07-05</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>06</td>
+                    <td>Rexus Mouse Gaming</td>
+                    <td>02</td>
+                    <td>Hijrah</td>
+                    <td>2022-07-06</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>07</td>
+                    <td>Ursa Nano Pod</td>
+                    <td>06</td>
+                    <td>Alif</td>
+                    <td>2022-07-09</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>08</td>
+                    <td>Caliburn GK 2</td>
+                    <td>09</td>
+                    <td>Natasya</td>
+                    <td>2022-07-03</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>09</td>
+                    <td>Macbook pro</td>
+                    <td>07</td>
+                    <td>Raihan</td>
+                    <td>2022-07-02</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+            <tr>
+                    <td>10</td>
+                    <td>iPhone 13</td>
+                    <td>03</td>
+                    <td>Ilwa</td>
+                    <td>2022-07-04</td>
+                    <td><a onClick="onEdit(this)">Edit</a>
+                        <a onClick="onDelete(this)">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="right-content">
+    <div class="form-title">
+        Input data [penjualan baru
+    </div>
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        <label for="nama-barang">Nama Barang : </label>
+                <div class="input">
+                    <input type="text" id="nameId" placeholder="input nama barang">
+                </div>
+                <label for="quantity">Quantity : </label>
+                <div class="input">
+                    <input type="text" id="quantityId" placeholder="input quantity">
+                </div>
+                <label for="dibuat-oleh">Tanggal Buat : </label>
+                <div class="input">
+                    <input type="date" id="tbId" placeholder="input Dibuat Oleh">
+                </div>
+                <label for="Tanggal Buat">Dibuat oleh : </label>
+                <div class="input">
+                    <input type="text" id="dbId" placeholder="input Tanggal Buat">
+                </div>
+        <div  class="form-action-buttons">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+       
+    <!-- <div class="input-data"> <a href="insertData.html">Input data</a>
+    </div> -->
+                </div>
+                </div>
+    
+        <div class="footer">
+            Copyright by Hadi Handoyo&copy;
+        </div>
+    </div>
+</body>
+<script src="./script/penjualan.js"></script>
+<script src="./script/search.js"></script>
+<script src="./script/insertData.js"></script>
+</html>

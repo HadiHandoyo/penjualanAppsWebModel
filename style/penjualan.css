@@ -1,0 +1,256 @@
+.header{
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    border-radius: 0px 0px 20px 20px;
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo-header img{
+    margin: 2%;
+    width: 100px;
+    height: 80px;
+}
+
+.content{
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mid-content{
+    display: flex;
+    width: 100%;
+    height: 800px;
+}
+
+.isi-content{
+    background-color: salmon;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.isi-konten img{
+    width: 200px;
+    height: 100px;
+}
+
+#table-penjualan{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#table-penjualan thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+#table-penjualan th,
+#table-penjualan td {
+    padding: 12px 15px;
+}
+
+#table-penjualan tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#table-penjualan tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#table-penjualan tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+#table-penjualan tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.left-nav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+}
+
+.left-nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: orange;
+    width: 200px;
+}
+
+.left-nav div a{
+    color: white;
+    text-decoration: none;
+}
+
+.left-nav div a:hover{
+    color: orange;
+}
+
+.left-nav div:hover{
+    background-color: salmon;
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        width: 100%;
+        float: none;
+        font-size: 20px;
+    }
+
+    .left-nav{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mid-content{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+#table-penjualan th {
+    cursor: pointer;
+  }
+  
+  #table-penjualan .th-sort-asc::after {
+    content: "\25b4";
+  }
+  
+  #table-penjualan .th-sort-desc::after {
+    content: "\25be";
+  }
+  
+  #table-penjualan .th-sort-asc::after,
+  #table-penjualan .th-sort-desc::after {
+    margin-left: 5px;
+  }
+  
+  #table-penjualan .th-sort-asc,
+  #table-penjualan .th-sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .d-flex{
+    position: relative;
+    top: 33px;
+    left: 15px;
+    width: 100%;
+  }
+
+  #search{
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 700px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid black;
+    margin-bottom: 12px;
+  }
+
+  .input-data{
+    width: 100px;
+    height: 50px;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.input-data a{
+    color: black;
+    text-decoration: none;
+}
+
+.input-data a:hover{
+    color: salmon;
+}
+  
+  @media screen and (max-width : 600px){
+    .mid-content{
+        width: 480px;
+    }
+    .isi-konten{
+        display: flex;
+        flex-direction:column;
+    }
+
+    #search{
+        width: 450px;
+    }
+}
+
+.isi-konten{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-content{
+    margin-left: 100px;
+}
+
+a{
+    cursor: pointer;
+    color: blue;
+}
+
+a:hover{
+    color: black;
+}
+
+.right-content div{
+    width: 100px;
+    height: 80px;
+}
+
+.right-content input{
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.form-title{
+    font-size: 18px;
+    font-weight: bold;
+}

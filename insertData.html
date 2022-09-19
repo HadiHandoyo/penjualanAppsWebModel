@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<link rel="stylesheet" href="./style/style.css">
+<body>
+    <div class="content">
+    <div class="header">
+        <div class="logo-header">
+            <img src="./assets/logo-SIS-PNG.png" alt="">
+        </div>
+        <div class="header-title">
+            Sekolah Sistem Informasi
+        </div>
+    </div>
+
+    <div class="mid-content">
+        <form action="penjualan.html" id="registForm" autocomplete="off" onsubmit="event.preventDefault(); onFormSubmit();">
+        <div class="mid-features">
+            Add Data to Penjualan Table
+
+                <div class="register-data">
+                    <label for="nama-barang">Nama Barang : </label>
+                    <div class="input">
+                        <input type="text" id="nameId" placeholder="input nama barang">
+                    </div>
+                    <label for="quantity">Quantity : </label>
+                    <div class="input">
+                        <input type="text" id="quantityId" placeholder="input quantity">
+                    </div>
+                    <label for="dibuat-oleh">Tanggal Buat : </label>
+                    <div class="input">
+                        <input type="date" id="tbId" placeholder="input Dibuat Oleh">
+                    </div>
+                    <label for="Tanggal Buat">Dibuat oleh : </label>
+                    <div class="input">
+                        <input type="text" id="dbId" placeholder="input Tanggal Buat">
+                    </div>
+                    <div class="submit-btn">
+                        <!-- <input type="submit" value="submit" id="submitBtn"> -->
+                        <button type="submit" value="submit" id="submitId">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        Copyright by Hadi Handoyo&copy;
+    </div>
+    </div>
+</body>
+<script src="./script/insertData.js"></script>
+</html>

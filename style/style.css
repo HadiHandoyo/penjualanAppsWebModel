@@ -1,0 +1,123 @@
+.header{
+    height: 120px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    border-radius: 0px 0px 20px 20px;
+}
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo-header img{
+    margin: 2%;
+    width: 100px;
+    height: 80px;
+}
+
+
+
+.mid-features{
+border-radius: 20px;
+width: 400px;
+height: 800px;
+background-color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white
+}
+
+.content-butt{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.content-butt a{
+    text-decoration: none;
+    color: black;
+}
+
+.content-butt a:hover{
+    color: salmon;
+}
+.content{
+    background-color: salmon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mid-content{
+    background-color: salmon;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: salmon;
+}
+
+.register-data{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: salmon;
+}
+
+.input input{
+    border-radius: 10px;
+   border-style: solid;
+   height: 25px;
+}
+
+.register-data label{
+    margin: 20px;
+}
+
+.submit-btn button{
+    height: 30px;
+    width: 100px;
+    background-color: bisque;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 600px){
+    .header{
+        width: 100%;
+        float: none;
+        font-size: 20px;
+    }
+
+    
+}
